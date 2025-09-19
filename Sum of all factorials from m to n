@@ -1,0 +1,16 @@
+def factorial(num):
+    result = 1
+    for i in range(2, num + 1):
+        result *= i
+    return result
+
+m = int(input("enter number m : "))
+n = int(input("enter number n : "))
+
+if m > n:
+    print("Invalid range: m should be less than or equal to n")
+else:
+    total = 0
+    for num in range(m, n + 1):
+        total += factorial(num)
+    print(f"Sum of factorials from {m} to {n} is {total}")
